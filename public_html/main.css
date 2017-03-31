@@ -3,3 +3,11 @@ html, body{
 	margin:0px;
 	width:100%;
 }
+
+h1 {
+	text-align: center;
+}
+
+.inputImage{
+	text-align:center;
+}
