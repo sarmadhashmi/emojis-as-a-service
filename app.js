@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
+const api = require('./ApiRequest.js')
 var path = require('path');
+
 
 app.listen(2017,function(){
 	console.log('Server listening on port 2017');
@@ -28,3 +30,5 @@ app.get('/', (req, res) => {
 	    }
 	});
 });
+
+app.use('/api', api);
